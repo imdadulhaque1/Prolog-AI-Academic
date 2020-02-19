@@ -1,0 +1,13 @@
+go:-
+	write("Enter two number: "),
+	read(X), read(Y),
+	cal(A,B).
+
+	cal(A,B):- S is A+B,
+		Z is A-B,
+		M is A*B,
+		D is div(A,B),
+		write('Summation is: '),write(S),nl,
+		write('Substruction is: '),write(Z),nl,
+		write('Multiplication is: '),write(M),nl,
+		write('Division is: '),write(D).
