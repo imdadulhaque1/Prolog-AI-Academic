@@ -1,0 +1,11 @@
+go:-
+    write('Enter the limitation of the Loop: '), read(I),read(S),
+    loop(I,S).
+loop(I,S):-
+    between(I,S,X),
+    A is mod(X,2),
+    A = 0,
+
+    writeln(X),
+    X>=S, !.
+    limit(I,S).
