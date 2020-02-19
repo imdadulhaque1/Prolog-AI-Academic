@@ -8,7 +8,7 @@ evenloop(I,S):-
     A = 0,
     writeln(X),
     X>=S, !.
-    limit(I,S),nl.
+    evenloop(I,S),nl.
 
 %oddloop(I,S):-
 %    between(I,S,X),
@@ -16,4 +16,4 @@ evenloop(I,S):-
 %    A \= 0,
 %    writeln(X),
 %    X>=S, !.
-%    limit(I,S).
+%    oddloop(I,S).
